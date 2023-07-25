@@ -1,0 +1,16 @@
+<div class="project-frame </div>">
+    <div class="project-container">
+        <h3>{{ project.name }} </h3>
+        <h4> {{ project.skills }}</h4>
+        <span> {{ project.description }} </span>
+        <div class="button-container">
+            <a href={{ project.serverUrl}} target="_blank">
+                <button class="live-test">Live test</button>
+            </a><a href={{ project.gitUrl }} target="_blank">
+                <button class="github">Github</button></a>
+        </div>
+    </div>
+    <div class="image-container el-pollo-loco">
+        <img src="{{ project.imgUrl }}" alt="laptop showing El-Pollo-loco game">
+    </div>
+</div>

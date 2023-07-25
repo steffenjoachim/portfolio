@@ -1,0 +1,55 @@
+.about-me-frame{
+    display: flex;
+    align-items: center;
+}
+
+
+h1{
+    font-size: 56px;
+    margin-left: 48px;
+}
+
+.about-me-text{
+    width: 450px;
+    margin-left: 48px;
+    text-align: justify;
+	text-align-last: none;
+}
+
+.bulb-container, .puzzle-container{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    img{
+        height: 48px;
+        width: 48px;
+        margin-left:16px;
+        margin-right: 16px;
+    }
+}
+
+.about-me-right{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    img{
+        border: 2px solid #70E61C;
+        border-radius: 100%;
+        height: 300px;
+    }
+}
+
+.line{
+    height: 2px;
+    width: 250px;
+    background: #70E61C;
+}
+
+.purple-shadow{
+    position: absolute;
+    height: 400px;
+    right: -170px;
+    top: 1030px;
+    z-index: -1;
+}

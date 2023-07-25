@@ -1,0 +1,82 @@
+.my-skills-frame{
+    margin-top: 48px;
+    display: flex;
+
+    img{
+        height: 32px;
+        width: 32px;
+    }
+
+    h1{
+        font-size: 56px;
+        margin-right: 16px;
+    }
+
+    button{
+        background: rgb(112, 230, 28);
+        height: 56px;
+        width: 200px;
+        color: white;
+        margin-top: 24px;
+        padding: 8px 16px;
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        &:hover{
+            cursor: pointer;
+            background: rgb(151, 71, 255);
+            transform: scale(1.2);
+        }
+    }
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin-left: 48px;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    width: 120px;
+    height: 100px;
+}
+
+.my-skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.my-skills-head{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 48px;
+}
+
+.line{
+    height: 2px;
+    width: 10%;
+    background: rgb(151, 71, 255); 
+    position: absolute;
+    right: 0;
+}
+
+.md{
+    text-align: center;
+}
+
+.green-shadow{
+    height: 500px;
+    position: absolute;
+    top: 1800px;
+    left: 0;
+    z-index: -1;
+}

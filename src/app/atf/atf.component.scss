@@ -1,0 +1,146 @@
+.atf-frame{
+height: 85vh;
+display: flex;
+flex-direction: row;
+color: white;
+margin-top: 148px;
+img{
+    height: 60vh;
+    width: 45vw;
+    margin-top: 24px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+button{
+    background: rgb(112, 230, 28);
+    height: 56px;
+    width: 160px;
+    color: white;
+    margin-top: 24px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    &:hover{
+        cursor: pointer;
+        background: rgb(151, 71, 255);
+        transform: scale(1.2);
+    }
+}
+
+h1{
+    font-size: 56px;
+    margin-right: 16px;
+}
+
+h3{
+    font-size: 42px;
+    color: rgb(151, 71, 255);
+}
+}
+
+.image-container{
+    width: 30%;
+}
+
+.iAm-frame{
+ margin-top: 96px;
+ margin-right: 32px;
+ flex: 1;
+}
+
+.iAm-container{
+    margin-top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.iAmDiv{
+margin-top: -26px;
+}
+
+.iAm{
+    -webkit-transform: rotate(270deg);
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 800;
+    margin-top: -300px;
+}
+
+.steffenFrontend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomOfAtf{
+align-items: flex-end;
+justify-content: space-between;
+display: flex;
+flex-direction: row;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+height: 170px;
+    img{
+        height: 24px;
+        width: 24px;
+        margin-left: 32px;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+    }
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+   
+    img{
+        margin-left: 60px;
+        margin-top: 116px;
+    }
+
+    span{
+        margin-left: 62px;
+        margin-top: 116px;
+    }
+}
+
+.line{
+    margin-top: 125px;
+    width: 150px;
+    height: 2px;
+    background: rgb(151, 71, 255);
+}
+
+.scrollDowm{
+    -webkit-transform: rotate(90deg);
+    display: inline-block;
+    margin-bottom: 75px;
+}
+
+.background-shape{
+    position: absolute;
+    bottom: -470px;
+    z-index: -9;
+    width: 100%;
+}
+
+.photo-shadow{
+    height: 500px;
+    position: absolute;
+    top: 200px;
+    z-index: -1;
+}

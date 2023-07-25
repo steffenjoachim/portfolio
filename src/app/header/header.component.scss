@@ -1,0 +1,22 @@
+.header-frame{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(20, 29, 47);
+    z-index: 99;
+    
+    a{
+        text-decoration: none;
+        color:white;
+        margin-right: 32px;
+    }
+}
+
+.my-logo{
+    height: 15vh;
+    margin-left: 48px;
+}

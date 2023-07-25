@@ -1,0 +1,112 @@
+.portfolio-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+h1{
+    font-size: 56px;
+    margin-right: 16px;
+}
+
+.line-left{
+    height: 2px;
+    width: 150px;
+    background: rgb(151, 71, 255); 
+    margin-right: 24px;
+}
+
+.line-right{
+    height: 2px;
+    min-width: 30%;
+    background: rgb(151, 71, 255); 
+    position: absolute;
+    right: 0;
+}
+
+.sample{
+    margin-top: 48px;
+    text-align: center;
+}
+
+.project-frame{
+    display: flex;
+    h3{
+        color:rgb(151, 71, 255) ;
+        font-size: 32px;
+    }
+    h4{
+        color: rgb(112, 230, 28);
+        font-size: 23px;
+    }
+}
+
+.even{
+    flex-direction: row-reverse;
+}
+
+.project-container{
+    margin-top: 96px;
+    margin-left: 48px;
+    margin-right: 48px;
+    a{
+        text-decoration: none;
+    }
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.live-test{
+    background: rgb(151, 71, 255);
+        height: 56px;
+        width: 140px;
+        color: white;
+        margin-top: 24px;
+        margin-right: 32px;
+        padding: 8px 16px;
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        &:hover{
+            cursor: pointer;
+            background: rgb(112, 230, 28);
+            transform: scale(1.2);
+        }
+}
+
+.github{
+    background: rgb(20, 29, 47);
+        height: 54px;
+        width: 138px;
+        color: white;
+        margin-top: 24px;
+        padding: 8px 16px;
+        border: 1px solid rgb(112, 230, 28);
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        &:hover{
+            cursor: pointer;
+            background: rgb(112, 230, 28);
+            transform: scale(1.2);
+        }
+}
+
+.purple-shadow2{
+    position: absolute;
+    top: 2350px;
+    height: 500px;
+    right: -120px;
+    z-index: -1;
+}
+
+.green-shadow2{
+    position: absolute;
+    top: 2750px;
+    height: 500px;
+    z-index: -1;
+}
