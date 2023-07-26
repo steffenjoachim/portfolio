@@ -1,9 +1,13 @@
+#atf{
+height: 15vh;
+}
+
 .atf-frame{
 height: 85vh;
 display: flex;
 flex-direction: row;
 color: white;
-margin-top: 148px;
+margin-top: 32px;
 img{
     height: 60vh;
     width: 45vw;
@@ -143,4 +147,10 @@ height: 170px;
     position: absolute;
     top: 200px;
     z-index: -1;
+}
+
+.sjs-mail{
+    text-decoration: none;
+    color: white;
+    margin-top: 115px;
 }

@@ -1,6 +1,7 @@
 .about-me-frame{
     display: flex;
     align-items: center;
+    margin-bottom: 120px;
 }
 
 
@@ -49,7 +50,7 @@ h1{
 .purple-shadow{
     position: absolute;
     height: 400px;
-    right: -170px;
+    right: 0;
     top: 1030px;
     z-index: -1;
 }
