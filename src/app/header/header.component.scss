@@ -13,10 +13,69 @@
         text-decoration: none;
         color:white;
         margin-right: 32px;
-    }
-}
+        position: relative;
+        &:hover{
+            color:rgb(112, 230, 28);
+        }
+        &.active {
+            color:rgb(112, 230, 28);
+            text-decoration: none; 
+            &:after {
+                content: '';                    
+                position: absolute;             
+                bottom: -4px;                   
+                left: 0;                        
+                width: 100%;                    
+                height: 2px;                    
+                background-color: rgb(151, 71, 255); 
+                animation: fadeOut 5s forwards; 
+            }
+          }
+        }
+      }
+      
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+        }
+      }
 
 .my-logo{
     height: 15vh;
     margin-left: 48px;
+}
+
+.burger{
+    position: absolute;
+    top: 48px;
+    right: 48px;
+    display: none;
+}
+
+.mobile-links{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($color: #000000, $alpha: 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a{
+        font-size: 24px;
+        font-weight: 900;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .link-container{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
 }

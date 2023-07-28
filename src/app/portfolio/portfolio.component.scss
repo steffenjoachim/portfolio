@@ -110,3 +110,24 @@ h1{
     height: 500px;
     z-index: -1;
 }
+
+@media (max-width: 1070px) {
+    .project-frame{
+        flex-direction: column-reverse;
+    }
+
+    .El-Pollo-loco{
+        flex-direction: column;
+    }
+
+    .image-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1070px) {
+    .project-image{
+        width: 500px;
+    }
+}

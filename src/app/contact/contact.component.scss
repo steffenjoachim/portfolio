@@ -40,6 +40,7 @@
         width: 250px;
         color: white;
         margin-top: 24px;
+        margin-left: 84px;
         padding: 8px 16px;
         border-radius: 10px;
         font-size: 24px;
@@ -106,4 +107,33 @@ h1{
     height: 500px;
     z-index: -1;
     top: 3300px;
+}
+
+@media (max-width: 830px) {
+
+    .contact-frame{
+
+        input{
+            width: 320px;
+        }
+
+        textarea{
+            width: 320px;
+        }
+
+        button{
+            margin-left: 52px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+.contact-frame{
+    flex-direction: column;
+}
+
+.contact-right{
+    margin-top: 48px;
+}
+
 }

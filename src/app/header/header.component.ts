@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  activeLink = ''; 
+
+  onLinkClick(link: string) {
+    this.activeLink = link;
+  }
+
+  openMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu?.classList.remove('d-none');
+  }
+
+  closeMenu(){
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu?.classList.add('d-none');
+  }
+  
 }
+

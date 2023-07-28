@@ -26,17 +26,17 @@ async sendMail(){
   console.log('Sending Mail', this.myForm);
  
   let nameField = this.nameField.nativeElement;
-  // let emailField = this.nameField.nativeElement;
+  let emailField = this.emailField.nativeElement;
   let messageField = this.messageField.nativeElement;
   let sendButton =  this.sendButton.nativeElement
   nameField.disabled = true;
-  // emailField.disabled = true;
+  emailField.disabled = true;
   messageField.disabled = true;
   sendButton.disabled = true;
   //animation anzeigen
   let fd = new FormData();
   fd.append('name', nameField.value);
-  // fd.append('email', emailField.value);
+  fd.append('email', emailField.value);
   fd.append('message', messageField.value);
 
   await fetch('https://steffen-schanze.de/send_mail/send_mail.php',
@@ -44,13 +44,11 @@ async sendMail(){
     method: 'POST',
     body: fd
   });
-  // Text anzeigen: Nachricht gesendet
+  alert('Die Nachricht wurde erfolgreich gesendet');
   nameField.disabled = false;
-  // emailField.disabled = false;
+  emailField.disabled = false;
   messageField.disabled = false;
   sendButton.disabled = false;
-
-  
  }  
 
 }

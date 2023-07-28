@@ -1,8 +1,17 @@
 <div class="header-frame" id="header">
     <img class="my-logo" src="/assets/img/sjs-logo.png" alt="my logo">
     <div class="link-container">
-        <a href="#about-me">About me</a>
-        <a href="#my-skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#about-me" (click)="onLinkClick('about-me')" [class.active]="activeLink === 'about-me'">About me</a>
+        <a href="#my-skills" (click)="onLinkClick('my-skills')" [class.active]="activeLink === 'my-skills'">Skills</a>
+        <a href="#portfolio" (click)="onLinkClick('portfolio')"
+            [class.active]="activeLink === 'portfolio'">Portfolio</a>
     </div>
-</div>
+    <img class="burger" (click)="openMenu()" id="burger" src="/assets/img/burger.png" alt="burger menu">
+    <div class="mobile-menu d-none" id="mobile-menu">
+        <div (click)="closeMenu()" class="mobile-links" id="mobile-links">
+            <a href="#about-me" (click)="onLinkClick('about-me')">About me</a>
+            <a href="#my-skills" (click)="onLinkClick('my-skills')">Skills</a>
+            <a href="#portfolio" (click)="onLinkClick('portfolio')">Portfolio</a>
+            <a href="#contact" (click)="onLinkClick('contact')">Contact</a>
+        </div>
+    </div>
