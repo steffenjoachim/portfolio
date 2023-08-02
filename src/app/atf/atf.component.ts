@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./atf.component.scss']
 })
 export class AtfComponent {
-
-  
-
+ 
 }
+

@@ -1,0 +1,170 @@
+.project-frame{
+    display: flex;
+    h3{
+        color:rgb(151, 71, 255) ;
+        font-size: 32px;
+    }
+    h4{
+        color: rgb(112, 230, 28);
+        font-size: 23px;
+    }
+}
+
+.even{
+    flex-direction: row-reverse;
+}
+
+.project-container{
+    margin-top: 96px;
+    margin-left: 48px;
+    margin-right: 48px;
+    a{
+        text-decoration: none;
+    }
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.live-test{
+    background: rgb(151, 71, 255);
+        height: 56px;
+        width: 140px;
+        color: white;
+        margin-top: 24px;
+        margin-right: 32px;
+        padding: 8px 16px;
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        &:hover{
+            cursor: pointer;
+            background: rgb(112, 230, 28);
+            transform: scale(1.2);
+        }
+}
+
+.github{
+    background: rgb(20, 29, 47);
+        height: 54px;
+        width: 138px;
+        color: white;
+        margin-top: 24px;
+        padding: 8px 16px;
+        border: 1px solid rgb(112, 230, 28);
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        &:hover{
+            cursor: pointer;
+            background: rgb(112, 230, 28);
+            transform: scale(1.2);
+        }
+}
+
+@media (max-width: 1070px) {
+
+    .project-image{
+        width: 400px;
+        margin-top: 68px;
+    }
+
+}
+
+@media (max-width: 830px) {
+
+    .project-image{
+        width: 500px;
+        margin-top: 0px;
+    }
+
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 48px;
+    }
+
+    .project-frame{
+        flex-direction: column-reverse;
+    }
+
+    .El-Pollo-loco{
+        flex-direction: column;
+    }
+
+    .image-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .line-right{
+        width: 23%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-image{
+        width: 400px;
+    }
+
+    .line-left{
+        width: 100px;
+    }
+
+    .line-right{
+        width: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    .line-left{
+        width: 80px;
+    }
+
+    .line-right{
+        width: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .project-image{
+        width: 300px;
+    }
+
+    .line-left{
+        width: 60px;
+    }
+
+    .line-right{
+        width: 10%;
+    }
+}
+
+@media (max-width: 400px) {
+    .line-left{
+        width: 40px;
+    }
+
+    .line-right{
+        width: 5%;
+    }
+
+    .live-test{
+            height: 48px;
+            width: 120px;
+            padding: 4px 8px;
+            font-size: 18px;
+    }
+    
+    .github{
+        height: 46px;
+        width: 120px;
+        padding: 4px 8px;
+        font-size: 18px;
+    }
+}

@@ -4,6 +4,11 @@
     background: rgb(112, 230, 28);
 }
 
+.logo-container{
+        margin-bottom: 0 !important;
+        margin-left: 48px !important;
+}
+
 .footer-frame{
     background: rgb(20, 29, 47);
     display: flex;
@@ -18,9 +23,13 @@
     a{
         color: white;
         text-decoration: none;
-        margin-left: 48px;
+        margin-left: 96px;
         margin-top: -24px;
         margin-bottom: 48px;
+        text-align: center;
+        &:hover{
+            color: rgb(112, 230, 28);
+        }
     }
 }
 
@@ -43,3 +52,48 @@
     }
 }
 
+.imprint-mobile{
+    color: white;
+    text-decoration: none;
+    margin-top: -12px;
+    margin-bottom: 48px;
+    display: none;
+    &:hover{
+        color: rgb(112, 230, 28);
+    }
+}
+
+@media (max-width: 660px) {
+    .footer-frame{
+        flex-direction: column;
+    }
+    .my-logo{
+    margin-left: -65px;
+}
+
+    .logo-frame{
+    align-items: center;
+    }
+
+.icon-container{
+    margin: 24px 0;
+}
+
+.imprint-desktop{
+    display: none;
+}
+
+.icon{
+    margin-left: 0;
+    margin-right: 32px;
+}
+
+.github{
+    margin-left: 16px;
+}
+
+.imprint-mobile{
+    display: block;
+}
+
+}

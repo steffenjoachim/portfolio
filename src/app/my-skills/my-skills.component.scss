@@ -1,5 +1,6 @@
 .my-skills-frame{
     margin-top: 48px;
+    margin-bottom: -140px;
     display: flex;
 
     img{
@@ -35,6 +36,18 @@
     flex-wrap: wrap;
     max-width: 50%;
     margin-left: 48px;
+    position: relative;
+}
+
+.green-shadow-container{
+    position: absolute;
+    left: 0;
+}
+
+.green-shadow{
+    height: 800px !important;
+    width: 500px !important;
+    z-index: -9;
 }
 
 .icon-container{
@@ -43,8 +56,9 @@
     align-items: center;
     justify-content: center;
     border: 1px solid transparent;
-    width: 150px;
-    height: 120px;
+    width: 250px;
+    height: 150px;
+    z-index: 1;
 }
 
 .my-skills-container{
@@ -73,14 +87,6 @@
     text-align: center;
 }
 
-.green-shadow{
-    height: 500px;
-    position: absolute;
-    top: 1800px;
-    left: 0;
-    z-index: -1;
-}
-
 .skill-img{
     &:hover{
         animation: shake 0.5s;
@@ -100,3 +106,113 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+@media (max-width: 1540px){
+
+    .icon-container{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 1120px){
+
+    .icon-container{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 950px){
+
+    .line{
+        width: 7%;
+    }
+
+    .icon-container{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+  @media (max-width: 768px) {
+    .my-skills-frame{
+        flex-direction: column-reverse;
+
+        span{
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }
+
+    .my-skills-container{
+        z-index: 1;
+    }
+
+    .skills-container{
+        margin-top: 48px;
+        max-width: 100%;
+    }
+
+    .green-shadow-container{
+        top: 1800px;
+    }
+
+    .green-shadow{
+        height: 600px !important;
+        width: 400px !important;
+    }
+
+    .line{
+        width: 30%;
+    }
+  }
+
+  @media (max-width: 650px){
+
+    .green-shadow-container{
+        top: 1900px;
+    }
+
+    .line{
+        width: 25%;
+    }
+}
+
+
+@media (max-width: 550px){
+
+    .green-shadow-container{
+        top: 2050px;
+    }
+}
+
+@media (max-width: 450px){
+
+    h1{
+        font-size: 40px !important;
+    }
+
+    .green-shadow{
+        height: 500px !important;
+        width: 300px !important;
+    }
+
+    .green-shadow-container{
+        top: 2250px;
+    }
+
+    .icon-container{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 350px){
+
+    .green-shadow-container{
+        display: none;
+    }
+}

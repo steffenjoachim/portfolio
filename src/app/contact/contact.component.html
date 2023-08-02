@@ -9,23 +9,66 @@
         <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
             your projects with my work</span>
         <br><br>
-        <span>Need a Frontend developer? <b>Contact me!</b></span> 
+        <span>Need a Frontend developer? <b>Contact me!</b></span>
     </div>
     <div class="contact-right">
         <div class="contact-form">
             <form (submit)="sendMail()" ngNativeValidate #myForm>
-                <input type="text" placeholder="Your name" required name="name" #nameField>
-                <input type="text" placeholder="Your email" required name="email" #emailField>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your message" required name="message" #messageField></textarea>
+                <div class="input-container">
+                    <input id="name" (focus)="setNameAttention()" (input)="checkInputName()" type="text" placeholder="Your name" required name="name"
+                        #nameField>
+                    <img class="attention d-none" id="name-attention" src="./assets/img/attention.png" alt="attention">
+                </div>
+                <span class="name-required d-none" id="name-required">Your name is required</span>
+                <div class="input-container">
+                    <input type="text" (input)="checkInputEmail()" placeholder="Your email" required name="email"
+                        #emailField>
+                    <img class="attention" src="./assets/img/attention.png" alt="attention">
+                </div>
+                <span class="email-required">Your email is required</span>
+                <div class="input-container">
+                    <textarea (input)="checkInputMessage()" name="" id="" cols="30" rows="10" placeholder="Your message"
+                        required name="message" #messageField></textarea>
+                    <img class="attention" src="./assets/img/attention.png" alt="attention">
+                </div>
+                <span class="message-required">Your message is empty</span>
                 <button #sendButton>Send a message :)</button>
-            </form> 
+            </form>
         </div>
+        <div id="success" class="sucess-message d-none-i" (click)="closeSuccessText()">
+            <div class="sucess-text-container">
+                <p class="sucess-text">The message has been sent successfully!</p>
+                <p class="continue"> To continue click anywhere you like!</p>
+            </div>
+        </div>
+        <!-- <div class="contact-form">
+            <form (submit)="sendMail()" ngNativeValidate #myForm>
+                <input type="text" placeholder="Your name" required name="name" #nameField
+                    (input)="onInputFieldChange(nameField)" [class.empty]="nameField.value.trim() === ''"
+                    [class.focus]="nameField === focusedField" [class.green]="nameField.value.trim() !== ''">
+                <input type="text" placeholder="Your email" required name="email" #emailField
+                    (input)="onInputFieldChange(emailField)" [class.empty]="emailField.value.trim() === ''"
+                    [class.focus]="emailField === focusedField" [class.green]="emailField.value.trim() !== ''">
+                <textarea cols="30" rows="10" placeholder="Your message" required name="message" #messageField
+                    (input)="onInputFieldChange(messageField)" [class.empty]="messageField.value.trim() === ''"
+                    [class.focus]="messageField === focusedField"
+                    [class.green]="messageField.value.trim() !== ''"></textarea>
+                <button #sendButton>Send a message :)</button>
+            </form>
+        </div> -->
+
+
     </div>
 </div>
 <div class="bottom-div">
-    <a href="#atf" (mouseover)="showGreen()" (mouseleave)="removeGreen()">
-        <img class="go-up-button"  src="/assets/img/go-up-button.png" alt="go up button">
-        <img class="go-up-button d-none" id="mouseTarget" src="/assets/img/go-up-button-green.svg" alt="go up button">
+    <a href="">
+        <div (mouseover)="showGreen()" (mouseleave)="removeGreen()" (click)="scrollToTop()">
+            <img class="go-up-button" src="./assets/img/go-up-button.png" alt="go up button">
+            <img class="go-up-button d-none" id="mouseTarget" src="./assets/img/go-up-button-green.svg"
+                alt="go up button">
+        </div>
     </a>
-    <img class="purple-shadow4" src="/assets/img/purple-shadow4.png" alt="shadow">
+    <div class="shadow-div">
+        <img class="purple-shadow4" src="./assets/img/purple-shadow4.png" alt="shadow">
+    </div>
 </div>

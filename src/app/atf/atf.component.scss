@@ -10,7 +10,6 @@ color: white;
 margin-top: 32px;
 img{
     height: 60vh;
-    width: 30vw;
     margin-top: 24px;
     margin-left: 48px;
     z-index: -9;
@@ -41,7 +40,6 @@ button{
 
 h1{
     font-size: 56px;
-    margin-right: 16px;
 }
 
 h3{
@@ -50,12 +48,34 @@ h3{
 }
 }
 
+.myself{
+    object-fit: cover;
+    animation: zoomIn 5s ease-in-out;
+}
+
+@keyframes zoomIn{
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
 .topOfAtf{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 96px;
 }
 
 .image-container{
+    position: relative;
+    left: 50px;
     width: 30%;
+}
+
+.shadow-container{
+    position: absolute;
+    left: -60px;
+    top: 0;
 }
 
 .iAm-frame{
@@ -69,6 +89,8 @@ h3{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 9;
+    position: relative;
 }
 
 .iAmDiv{
@@ -100,7 +122,7 @@ left: 0;
 right: 0;
 width: 100%;
 height: 170px;
-z-index: 99;
+z-index: 9;
     img{
         height: 24px;
         width: 24px;
@@ -122,6 +144,7 @@ z-index: 99;
     img{
         margin-left: 60px;
         margin-top: 116px;
+        margin-bottom: 16px;
     }
 
     span{
@@ -131,7 +154,7 @@ z-index: 99;
 }
 
 .line{
-    margin-top: 125px;
+    margin-top: 130px;
     width: 150px;
     height: 2px;
     background: rgb(151, 71, 255);
@@ -141,6 +164,7 @@ z-index: 99;
     -webkit-transform: rotate(90deg);
     display: inline-block;
     margin-bottom: 75px;
+    margin-right: 88px;
 }
 
 .background-shape{
@@ -160,18 +184,92 @@ z-index: 99;
 .sjs-mail{
     text-decoration: none;
     color: white;
-    margin-top: 115px;
+    margin-top: 117px;
+}
+
+@media (min-width: 1600px){
+
+    .atf-frame{
+        h1{
+            font-size:84px;
+        }
+        
+        h3{
+            font-size: 64px;
+        }
+
+        button{
+            height: 80px;
+            width: 200px;
+        }
+    
+    }
+    
+    .iAm{
+        font-size: 56px;
+    }
+
+    .background-shape{
+        bottom: -620px !important;}
+}
+
+@media (min-width: 1500px){
+
+    .background-shape{
+        bottom: 50;}
+}
+
+@media (min-width: 1400px){
+
+    .background-shape{
+        bottom: -470px;}
+}
+
+
+@media (min-width: 1240px) {
+
+    .atf-frame{
+        img{
+            height: 70vh;
+        }
+    }
+
+    .icon-image{
+        height: 32px !important;
+        width: 32px !important;
+    }
+
+}
+
+
+@media (max-width: 1240px) {
+
+    .background-shape{
+        bottom: -270px;
+    }
 }
 
 @media (max-width: 1024px) {
+.atf-frame{
+    height: 50vh;
+}
+
     .myself{
-            height: 40vh !important;
-            width: 30vw !important;
+            margin-left: 0;
+
         }
+
+    .image-container{
+        left: -200px;
+    }
 
     .topOfAtf{
         flex-direction: column;
         align-items: center;
+    }
+
+    .bottomOfAtf{
+        z-index: 3;
     }
 
     .iAm-frame{
@@ -179,12 +277,12 @@ z-index: 99;
         margin-right: 0;
         width: 95vw;
         display: flex;
-        justify-content: center;
-        z-index: 99;
+        justify-content: flex-start;
+        z-index: 4;
     }
 
     .background-shape{
-        bottom: -70px;
+        bottom: -170px;
     }
 
     .photo-shadow{
@@ -211,4 +309,235 @@ z-index: 99;
     .email-address{
         display: none;
     }
+}
+
+@media (max-width: 870px) {
+
+    .background-shape{
+        bottom: -20px;
+    }
+
+    .photo-shadow{
+        left: 50px;
+    }
+
+    .atf-frame{
+
+        img{
+            height: 50vh;
+        }
+    }
+
+    .icon-image{
+        height: 28px !important;
+        width: 28px !important;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+.photo-shadow{
+    left: 0;
+    height: 300px;
+}
+
+.background-shape{
+    bottom: 50px;
+}
+
+}
+
+@media (max-width: 680px) {
+
+    .atf-frame{
+        img{
+            margin-left: 0;
+        }
+    }
+
+    .icon-image{
+        margin-left: 32px !important;
+    }
+
+    .photo-shadow{
+        height: 50vh !important;
+        margin-left: 50px !important;
+    }
+
+    .background-shape{
+        bottom: 100px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .scroll-down-container{
+       display: none;
+    }
+
+    .atf-frame{
+    h1{
+        font-size: 48px;
+    }
+    
+    h3{
+        font-size: 32px;
+    }
+}
+
+.image-container{
+    margin-left: 96px;
+}
+
+.background-shape{
+    bottom: 100px;
+}
+
+.photo-shadow{
+    height: 40vh !important;
+    margin-left: 40px !important;
+}
+
+.iAm{
+    font-size: 32px;
+}
+.iAmDiv{
+    margin-top: -52px;
+    }
+
+    .atf-frame{
+    h1{
+        font-size:48px;
+    }
+    
+    h3{
+        font-size: 36px;
+    }
+}
+
+.iAm{
+    font-size: 36px;
+}
+
+.iAmDiv{
+    margin-top: -48px;
+    }
+
+    .icon-image{
+        margin-left: 56px !important;
+    }
+}
+
+
+@media (max-width: 500px){
+    .atf-frame{
+        img{
+            height: 45vh;
+        }
+    }
+
+    .image-container{
+        margin-left: 72px;
+    }
+
+    .iAm-container{
+        margin-left: 18px;
+    }
+
+    .photo-shadow{
+        height: 30vh !important;
+        margin-left: 85px !important;
+        margin-top: 70px !important;
+    }
+
+    .background-shape{
+        display: none;
+    }
+
+    .iAm-container{
+        margin-top: 0;
+    }
+
+    .atf-frame{
+        h1{
+            font-size:36px;
+        }
+        
+        h3{
+            font-size: 24px;
+        }
+
+        button{
+            height: 50px;
+        }
+    
+    }
+    
+    .iAm{
+        font-size: 24px;
+    }
+
+    .iAmDiv{
+        margin-top: -62px;
+        }
+
+        .image-container{
+            left: -160px;
+        }
+}
+
+@media (max-width: 400px) {
+
+    .line{
+        width: 50px;
+    }
+
+    .icon-container{
+
+        img{
+            margin-left: 50px;
+        }
+    }
+
+    .atf-frame{
+        h1{
+            font-size: 28px;
+        }
+        
+        h3{
+            font-size: 18px;
+        }
+    }
+    
+    .iAm{
+        font-size: 18px;
+    }
+
+    // .background-shape{
+    //     bottom: 170px;
+    // }
+
+    .icon-image{
+        height: 24px !important;
+        width: 24px !important;
+    }
+
+    .iAm-container{
+        margin-top: 80px;
+    }
+
+    .atf-frame{
+        img{
+            height: 35vh;
+        }
+    }
+
+    .photo-shadow{
+        height: 25vh !important;
+        margin-left: 35px !important;
+        margin-top: 60px !important;
+    }
+   
 }
