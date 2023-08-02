@@ -10,7 +10,7 @@
 
     h1{
         font-size: 56px;
-        margin-right: 16px;
+        margin-right: -220px;
     }
 
     button{
@@ -35,7 +35,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 50%;
-    margin-left: 48px;
+    margin-left: 0px;
     position: relative;
 }
 
@@ -75,9 +75,13 @@
     margin-top: 48px;
 }
 
+.my-skills-text{
+    margin-right: 124px;
+}
+
 .line{
     height: 2px;
-    width: 10%;
+    width: 8%;
     background: rgb(151, 71, 255); 
     position: absolute;
     right: 0;
@@ -109,9 +113,27 @@
 
 @media (max-width: 1540px){
 
+    .line{
+        width: 5%;
+    }
+
+
     .icon-container{
         width: 180px;
         height: 180px;
+    }
+
+    .skills-container{
+        margin-left: 32px;
+    }
+}
+
+@media (max-width: 1280px){
+    .line{
+        width: 5%;
+    }
+    .my-skills-container{
+        margin-right: 32px !important;
     }
 }
 
@@ -121,13 +143,25 @@
         width: 150px;
         height: 150px;
     }
+
+    .line{
+        width: 2%;
+    }
 }
 
 
 @media (max-width: 950px){
 
+    .my-skills-frame{
+        margin-right: 0;
+    }
+
+    h1{
+        margin-right: 96px !important;
+    }
+
     .line{
-        width: 7%;
+        width: 10%;
     }
 
     .icon-container{
@@ -145,6 +179,11 @@
             margin-left: 16px;
             margin-right: 16px;
         }
+    }
+
+    .my-skills-text{
+        margin-left: 96px !important;
+        margin-right: 124px !important;
     }
 
     .my-skills-container{
@@ -178,6 +217,13 @@
 
     .line{
         width: 25%;
+    }
+}
+
+@media (max-width: 680px){
+
+    .my-skills-text{
+        margin-left: 48px !important;
     }
 }
 

@@ -16,8 +16,8 @@
 
 .project-container{
     margin-top: 96px;
-    margin-left: 48px;
-    margin-right: 48px;
+    margin-left: 96px;
+    margin-right: 96px;
     a{
         text-decoration: none;
     }
@@ -142,6 +142,10 @@
 
     .line-right{
         width: 10%;
+    }
+
+    .button-container{
+        flex-direction: column;
     }
 }
 

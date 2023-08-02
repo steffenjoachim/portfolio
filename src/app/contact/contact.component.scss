@@ -44,6 +44,10 @@
         border: none !important;
       }
 
+      .transperent{
+        color: transparent !important;
+      }
+
     input, textarea {
         background: rgb(20, 29, 47);
         border: 1px solid rgb(151, 71, 255);
@@ -63,10 +67,10 @@
         //   }
         // }
     
-        &:green {
-          outline: 1px solid rgb(112, 230, 28) !important;
-          border: none !important;
-        }
+        // &:green {
+        //   outline: 1px solid rgb(112, 230, 28) !important;
+        //   border: none !important;
+        // }
       }
     
       // Style für leere Inputfelder und Textareas
@@ -107,7 +111,7 @@
 
 .line{
     height: 2px;
-    width: 3%;
+    width: 5%;
     background: rgb(151, 71, 255);
     position: absolute;
     left: 0;
@@ -119,12 +123,13 @@ h1{
 }
 
 .contact-left{
-    margin-left: 48px;
+    margin-left: 96px;
 }
 
 .name-required, .email-required, .message-required{
     color: rgb(230, 28, 64);
     font-size: 12px;
+    font-weight: 500;
     margin-top: -12px;
     margin-bottom: 16px;
 }
@@ -148,7 +153,7 @@ h1{
     form{
         display: flex;
         flex-direction: column;
-        margin-right: 48px;
+        margin-right: 124px;
         margin-left: 48px;
     }
 }
@@ -158,6 +163,19 @@ h1{
     margin-top: 96px;
     position: absolute;
     right: 48px;
+    &:hover{
+        display: none;
+    }
+}
+
+.go-up-button-green{
+    height: 32px;
+    margin-top: 96px;
+    position: absolute;
+    right: 48px;
+    &:hover{
+        display: block !important;
+    }
 }
 
 .bottom-div{
@@ -291,6 +309,15 @@ h1{
         margin-left: 16px;
         margin-right: 16px;
     }
+
+    .contact-form{
+        margin-left: 48px;
+    }
+
+    .contact-left{
+        margin-right: 96px;
+        margin-left: 48px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -298,15 +325,22 @@ h1{
     .contact-frame{
 
         input{
-            width: 265px;
+            width: 230px;
+            margin-left: 48px;
         }
 
         textarea{
-            width: 265px;
+            width: 230px;
+            margin-left: 48px;
         }
 
         button{
-            margin-left: 20px;
+            margin-left: 48px;
         }
+    }
+
+    .contact-left{
+        margin-left: 48px;
+        margin-right: 48px;
     }
 }

@@ -90,12 +90,13 @@ export class ContactComponent {
     let nameField = this.nameField.nativeElement;
     if (nameField.value !== '') {
       nameField.classList.add('green');
+      nameField.classList.remove('red');
       document.getElementById('name-attention')?.classList.add('d-none');
-      document.getElementById('name-required')?.classList.add('d-none');
+      document.getElementById('name-required')?.classList.add('transperent');
     } else {
       nameField.classList.add('red');
       document.getElementById('name-attention')?.classList.remove('d-none');
-      document.getElementById('name-required')?.classList.remove('d-none');
+      document.getElementById('name-required')?.classList.remove('transperent');
     }
   }
 
@@ -104,11 +105,11 @@ export class ContactComponent {
     if (nameField.value == '') {
       nameField.classList.add('red');
       document.getElementById('name-attention')?.classList.remove('d-none');
-      document.getElementById('name-required')?.classList.remove('d-none');
+      document.getElementById('name-required')?.classList.remove('transperent');
     } else {
       nameField.classList.add('green');
       document.getElementById('name-attention')?.classList.add('d-none');
-      document.getElementById('name-required')?.classList.add('d-none');
+      document.getElementById('name-required')?.classList.add('transperent');
     }
   }
 
@@ -116,19 +117,55 @@ export class ContactComponent {
     let emailField = this.emailField.nativeElement;
     if (emailField.value !== '') {
       emailField.classList.add('green');
+      emailField.classList.remove('red');
+      document.getElementById('email-attention')?.classList.add('d-none');
+      document.getElementById('email-required')?.classList.add('transperent');
     } else {
       emailField.classList.add('red');
+      document.getElementById('email-attention')?.classList.remove('d-none');
+      document.getElementById('email-required')?.classList.remove('transperent');
     }
   }
+
+  setEmailAttention(){
+    let emailField = this.emailField.nativeElement;
+    if (emailField.value == '') {
+      emailField.classList.add('red');
+      document.getElementById('email-attention')?.classList.remove('d-none');
+      document.getElementById('email-required')?.classList.remove('transperent');
+    } else {
+      emailField.classList.add('green');
+      document.getElementById('email-attention')?.classList.add('d-none');
+      document.getElementById('email-required')?.classList.add('transperent');
+  }
+}
 
   checkInputMessage(){
     let messageField = this.messageField.nativeElement;
     if (messageField.value !== '') {
       messageField.classList.add('green');
+      messageField.classList.remove('red');
+      document.getElementById('message-attention')?.classList.add('d-none');
+      document.getElementById('message-required')?.classList.add('transperent');
     } else {
       messageField.classList.add('red');
+      document.getElementById('message-attention')?.classList.remove('d-none');
+      document.getElementById('message-required')?.classList.remove('transperent');
     }
   }
+
+  setMessageAttention(){
+    let messageField = this.messageField.nativeElement;
+    if (messageField.value == '') {
+      messageField.classList.add('red');
+      document.getElementById('message-attention')?.classList.remove('d-none');
+      document.getElementById('message-required')?.classList.remove('transperent');
+    } else {
+      messageField.classList.add('green');
+      document.getElementById('message-attention')?.classList.add('d-none');
+      document.getElementById('message-required')?.classList.add('transperent');
+  }
+}
 
   async sendMail() {
   
@@ -183,10 +220,9 @@ export class ContactComponent {
   }
 
   scrollToTop(): void {
-    setTimeout(() => {
+    // setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 100);
-   
+    // }, 100);
   }
 }
 

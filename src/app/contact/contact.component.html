@@ -19,19 +19,19 @@
                         #nameField>
                     <img class="attention d-none" id="name-attention" src="./assets/img/attention.png" alt="attention">
                 </div>
-                <span class="name-required d-none" id="name-required">Your name is required</span>
+                <span class="name-required transperent" id="name-required">Your name is required</span>
                 <div class="input-container">
-                    <input type="text" (input)="checkInputEmail()" placeholder="Your email" required name="email"
+                    <input type="text" (focus)="setEmailAttention()" (input)="checkInputEmail()" placeholder="Your email" required name="email"
                         #emailField>
-                    <img class="attention" src="./assets/img/attention.png" alt="attention">
+                    <img class="attention d-none" id="email-attention" src="./assets/img/attention.png" alt="attention">
                 </div>
-                <span class="email-required">Your email is required</span>
+                <span class="email-required transperent" id="email-required">Your email is required</span>
                 <div class="input-container">
-                    <textarea (input)="checkInputMessage()" name="" id="" cols="30" rows="10" placeholder="Your message"
+                    <textarea (focus)="setMessageAttention()" (input)="checkInputMessage()" name="" id="" cols="30" rows="10" placeholder="Your message"
                         required name="message" #messageField></textarea>
-                    <img class="attention" src="./assets/img/attention.png" alt="attention">
+                    <img class="attention d-none" id="message-attention" src="./assets/img/attention.png" alt="attention">
                 </div>
-                <span class="message-required">Your message is empty</span>
+                <span class="message-required transperent" id="message-required">Your message is empty</span>
                 <button #sendButton>Send a message :)</button>
             </form>
         </div>
@@ -61,14 +61,13 @@
     </div>
 </div>
 <div class="bottom-div">
-    <a href="">
-        <div (mouseover)="showGreen()" (mouseleave)="removeGreen()" (click)="scrollToTop()">
-            <img class="go-up-button" src="./assets/img/go-up-button.png" alt="go up button">
-            <img class="go-up-button d-none" id="mouseTarget" src="./assets/img/go-up-button-green.svg"
+        <div>
+            <img (mouseover)="showGreen()" (mouseleave)="removeGreen()" class="go-up-button" src="./assets/img/go-up-button.png" alt="go up button">
+            <img class="go-up-button-green d-none" (click)="scrollToTop()" id="mouseTarget" src="./assets/img/go-up-button-green.svg"
                 alt="go up button">
         </div>
-    </a>
     <div class="shadow-div">
         <img class="purple-shadow4" src="./assets/img/purple-shadow4.png" alt="shadow">
     </div>
 </div>
+

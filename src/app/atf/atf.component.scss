@@ -164,7 +164,7 @@ z-index: 9;
     -webkit-transform: rotate(90deg);
     display: inline-block;
     margin-bottom: 75px;
-    margin-right: 88px;
+    margin-right: 80px;
 }
 
 .background-shape{
@@ -249,14 +249,39 @@ z-index: 9;
     }
 }
 
+@media (max-width: 1070px){
+    .atf-frame{
+        h1{
+            font-size: 52px;
+        }
+        
+        h3{
+            font-size: 39px;
+        }
+    }
+
+}
+
+
 @media (max-width: 1024px) {
+
+    .atf-frame{
+        h1{
+            font-size: 56px;
+        }
+        
+        h3{
+            font-size: 42px;
+        }
+    }
+
+
 .atf-frame{
     height: 50vh;
 }
 
     .myself{
             margin-left: 0;
-
         }
 
     .image-container{
@@ -273,16 +298,16 @@ z-index: 9;
     }
 
     .iAm-frame{
-        margin-top: 0;
+        margin-top: -80px;
         margin-right: 0;
-        width: 95vw;
+        // width: 95vw;
         display: flex;
         justify-content: flex-start;
         z-index: 4;
     }
 
     .background-shape{
-        bottom: -170px;
+        bottom: -140px;
     }
 
     .photo-shadow{
@@ -311,7 +336,18 @@ z-index: 9;
     }
 }
 
+@media (max-width: 970px) {
+
+    .background-shape{
+        bottom: -90px;
+    }
+}
+
 @media (max-width: 870px) {
+
+    .iAm-container{
+        margin-top: 0;
+    }
 
     .background-shape{
         bottom: -20px;
@@ -350,6 +386,20 @@ z-index: 9;
 
 @media (max-width: 680px) {
 
+    .scroll-down-container{
+        display: none;
+     }
+ 
+     .atf-frame{
+     h1{
+         font-size: 48px;
+     }
+     
+     h3{
+         font-size: 32px;
+     }
+ }
+
     .atf-frame{
         img{
             margin-left: 0;
@@ -371,28 +421,15 @@ z-index: 9;
 }
 
 
-@media (max-width: 600px) {
-
-    .scroll-down-container{
-       display: none;
-    }
-
-    .atf-frame{
-    h1{
-        font-size: 48px;
-    }
-    
-    h3{
-        font-size: 32px;
-    }
-}
+@media (max-width: 605px) {
 
 .image-container{
     margin-left: 96px;
+    margin-top: 8dvb;
 }
 
 .background-shape{
-    bottom: 100px;
+    bottom: 60px;
 }
 
 .photo-shadow{
@@ -409,11 +446,11 @@ z-index: 9;
 
     .atf-frame{
     h1{
-        font-size:48px;
+        font-size:36px;
     }
     
     h3{
-        font-size: 36px;
+        font-size: 24px;
     }
 }
 
@@ -440,6 +477,10 @@ z-index: 9;
 
     .image-container{
         margin-left: 72px;
+    }
+
+    .iAm-frame{
+        margin-bottom: -300px;
     }
 
     .iAm-container{
@@ -485,6 +526,16 @@ z-index: 9;
 
         .image-container{
             left: -160px;
+        }
+
+        .atf-frame{
+            h1{
+                font-size: 28px;
+            }
+            
+            h3{
+                font-size: 18px;
+            }
         }
 }
 
