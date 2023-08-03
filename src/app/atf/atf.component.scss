@@ -339,7 +339,7 @@ z-index: 9;
 @media (max-width: 970px) {
 
     .background-shape{
-        bottom: -90px;
+        bottom: 50px;
     }
 }
 
@@ -350,7 +350,7 @@ z-index: 9;
     }
 
     .background-shape{
-        bottom: -20px;
+        bottom: 100px;
     }
 
     .photo-shadow{
@@ -423,23 +423,30 @@ z-index: 9;
 
 @media (max-width: 605px) {
 
-.image-container{
-    margin-left: 96px;
-    margin-top: 8dvb;
+    .image-container{
+        position: inherit;
+        margin-top: 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+.shadow-container{
+    z-index: -99;
 }
 
 .background-shape{
-    bottom: 60px;
+    bottom: 20px;
 }
 
 .photo-shadow{
     height: 40vh !important;
     margin-left: 40px !important;
 }
+ .iAm-container{
+    margin-top: -40px;
+ }
 
-.iAm{
-    font-size: 32px;
-}
 .iAmDiv{
     margin-top: -52px;
     }
@@ -465,6 +472,10 @@ z-index: 9;
     .icon-image{
         margin-left: 56px !important;
     }
+
+.iAm-frame{
+    margin-top: -20px;
+}
 }
 
 
@@ -513,6 +524,22 @@ z-index: 9;
         button{
             height: 50px;
         }
+
+        .image-container{
+            position: inherit;
+            margin-top: 0;
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .shadow-container{
+            z-index: -99;
+        }
+
+        .topOfAtf{
+            margin-right: 0;
+        }
     
     }
     
@@ -549,12 +576,13 @@ z-index: 9;
 
         img{
             margin-left: 50px;
+            
         }
     }
 
     .atf-frame{
         h1{
-            font-size: 28px;
+            font-size: 24px;
         }
         
         h3{
@@ -564,19 +592,22 @@ z-index: 9;
     
     .iAm{
         font-size: 18px;
+        margin-bottom: 8px;
     }
-
-    // .background-shape{
-    //     bottom: 170px;
-    // }
 
     .icon-image{
         height: 24px !important;
         width: 24px !important;
     }
 
+    .shadow-container{
+        left: 60px;
+        top: 60px;
+        // z-index: -99;
+    }
+
     .iAm-container{
-        margin-top: 80px;
+        margin-top: -80px;
     }
 
     .atf-frame{
@@ -590,5 +621,10 @@ z-index: 9;
         margin-left: 35px !important;
         margin-top: 60px !important;
     }
-   
+}
+
+@media (max-width: 300px) {
+   .iAm-container{
+    margin-top: -90px;
+   }
 }

@@ -22,6 +22,10 @@ export class HeaderComponent {
     const mobileMenu = document.getElementById('mobile-menu');
     mobileMenu?.classList.add('d-none');
   }
+
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
+}
   
 }
 

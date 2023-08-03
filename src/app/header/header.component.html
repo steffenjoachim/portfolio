@@ -1,5 +1,7 @@
 <div class="header-frame" id="header">
-    <img class="my-logo" src="/assets/img/sjs-logo.png" alt="my logo">
+    <a href="" routerLink="/">
+    <img class="my-logo" src="/assets/img/sjs-logo.png" alt="my logo" (click)="scrollToTop()">
+</a>
     <div class="link-container">
         <a href="#about-me" (click)="onLinkClick('about-me')" [class.active]="activeLink === 'about-me'">About me</a>
         <a href="#my-skills" (click)="onLinkClick('my-skills')" [class.active]="activeLink === 'my-skills'">Skills</a>

@@ -220,9 +220,7 @@ export class ContactComponent {
   }
 
   scrollToTop(): void {
-    // setTimeout(() => {
       window.scrollTo(0, 0);
-    // }, 100);
   }
 }
 

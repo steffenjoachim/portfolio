@@ -1,4 +1,4 @@
-<div class="contact-frame" id="contact">
+<div class="contact-frame">
     <div class="contact-left">
         <div class="contact-headline">
             <div class="line"></div>
@@ -62,7 +62,7 @@
 </div>
 <div class="bottom-div">
         <div>
-            <img (mouseover)="showGreen()" (mouseleave)="removeGreen()" class="go-up-button" src="./assets/img/go-up-button.png" alt="go up button">
+            <img (mouseover)="showGreen()" (mouseleave)="removeGreen()" (click)="scrollToTop()" class="go-up-button" src="./assets/img/go-up-button.png" alt="go up button">
             <img class="go-up-button-green d-none" (click)="scrollToTop()" id="mouseTarget" src="./assets/img/go-up-button-green.svg"
                 alt="go up button">
         </div>
