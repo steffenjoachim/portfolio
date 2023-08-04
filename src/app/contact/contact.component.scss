@@ -292,6 +292,14 @@ h1{
 .continue{
     margin-top: 76px;
 }
+
+.go-up-button{
+    display: none;
+}
+.go-up-button-green{
+    display: block !important;
+}
+
 }
 
 @media (max-width: 500px){

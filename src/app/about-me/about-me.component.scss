@@ -31,8 +31,22 @@ h1{
         width: 48px;
         margin-left:16px;
         margin-right: 16px;
+        &:hover{
+            transform-origin: center;
+            animation: flipperAnimation 1.5s infinite;
+            animation-direction: alternate;
+        }
     }
 }
+
+@keyframes flipperAnimation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
 
 .about-me-right{
     display: flex;
