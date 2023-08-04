@@ -21,9 +21,9 @@
                 </div>
                 <span class="name-required transperent" id="name-required">Your name is required</span>
                 <div class="input-container">
-                    <input type="text" (focus)="setEmailAttention()" (input)="checkInputEmail()" placeholder="Your email" required name="email"
+                    <input type="email" (focus)="setEmailAttention()" (input)="checkInputEmail()" placeholder="Your email" required name="email"
                         #emailField>
-                    <img class="attention d-none" id="email-attention" src="./assets/img/attention.png" alt="attention">
+                    <img class="attention d-none" id="email-attention" required title="The input must contain a @-sign" src="./assets/img/attention.png" alt="attention">
                 </div>
                 <span class="email-required transperent" id="email-required">Your email is required</span>
                 <div class="input-container">
@@ -41,29 +41,12 @@
                 <p class="continue"> To continue click anywhere you like!</p>
             </div>
         </div>
-        <!-- <div class="contact-form">
-            <form (submit)="sendMail()" ngNativeValidate #myForm>
-                <input type="text" placeholder="Your name" required name="name" #nameField
-                    (input)="onInputFieldChange(nameField)" [class.empty]="nameField.value.trim() === ''"
-                    [class.focus]="nameField === focusedField" [class.green]="nameField.value.trim() !== ''">
-                <input type="text" placeholder="Your email" required name="email" #emailField
-                    (input)="onInputFieldChange(emailField)" [class.empty]="emailField.value.trim() === ''"
-                    [class.focus]="emailField === focusedField" [class.green]="emailField.value.trim() !== ''">
-                <textarea cols="30" rows="10" placeholder="Your message" required name="message" #messageField
-                    (input)="onInputFieldChange(messageField)" [class.empty]="messageField.value.trim() === ''"
-                    [class.focus]="messageField === focusedField"
-                    [class.green]="messageField.value.trim() !== ''"></textarea>
-                <button #sendButton>Send a message :)</button>
-            </form>
-        </div> -->
-
-
     </div>
 </div>
 <div class="bottom-div">
         <div>
             <img (mouseover)="showGreen()" (mouseleave)="removeGreen()" (click)="scrollToTop()" class="go-up-button" src="./assets/img/go-up-button.png" alt="go up button">
-            <img class="go-up-button-green d-none" (click)="scrollToTop()" id="mouseTarget" src="./assets/img/go-up-button-green.svg"
+            <img (click)="scrollToTop()" class="go-up-button-green d-none" id="mouseTarget" src="./assets/img/go-up-button-green.svg"
                 alt="go up button">
         </div>
     <div class="shadow-div">
