@@ -1,16 +1,16 @@
 <div class="project-frame {{project.order}}">
-    <div class="project-container">
+    <div class="project-container" data-aos="slide-up">
         <h3>{{ project.name }} </h3>
         <h4> {{ project.skills }}</h4>
         <span> {{ project.description }} </span>
         <div class="button-container">
             <a href={{project.serverUrl}} target="_blank">
-                <button class="live-test">Live test</button>
+                <button class="live-test">Live Test</button>
             </a><a href={{project.gitUrl}} target="_blank">
                 <button class="github">Github</button></a>
         </div>
     </div>
-    <div class="image-container el-pollo-loco">
+    <div class="image-container el-pollo-loco" data-aos="flip-up">
         <img class="project-image" src="{{project.imgUrl}}" alt="laptop showing El-Pollo-loco game">
     </div>
 </div>

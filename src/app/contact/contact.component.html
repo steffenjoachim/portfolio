@@ -1,35 +1,40 @@
 <div class="contact-frame">
-    <div class="contact-left">
-        <div class="contact-headline">
-            <div class="line"></div>
-            <h1>Contact</h1>
+    <div class="line"></div>
+    <div class="contact-left-frame">
+        <div class="contact-left" data-aos="flip-right">
+            <div class="contact-headline">
+                <h1>Contact</h1>
+            </div>
+            <h2>Got a problem to solve?</h2>
+            <br>
+            <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing
+                to
+                your projects with my work</span>
+            <br><br>
+            <span>Need a Frontend developer? <b>Contact me!</b></span>
         </div>
-        <h2>Got a problem to solve?</h2>
-        <br>
-        <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
-            your projects with my work</span>
-        <br><br>
-        <span>Need a Frontend developer? <b>Contact me!</b></span>
     </div>
-    <div class="contact-right">
+    <div class="contact-right" data-aos="flip-left">
         <div class="contact-form">
             <form (submit)="sendMail()" ngNativeValidate #myForm>
                 <div class="input-container">
-                    <input id="name" (focus)="setNameAttention()" (input)="checkInputName()" type="text" placeholder="Your name" required name="name"
-                        #nameField>
+                    <input id="name" (focus)="setNameAttention()" (input)="checkInputName()" type="text"
+                        placeholder="Your name" required name="name" #nameField>
                     <img class="attention d-none" id="name-attention" src="./assets/img/attention.png" alt="attention">
                 </div>
                 <span class="name-required transperent" id="name-required">Your name is required</span>
                 <div class="input-container">
-                    <input type="email" (focus)="setEmailAttention()" (input)="checkInputEmail()" placeholder="Your email" required name="email"
-                        #emailField>
-                    <img class="attention d-none" id="email-attention" required title="The input must contain a @-sign" src="./assets/img/attention.png" alt="attention">
+                    <input type="email" (focus)="setEmailAttention()" (input)="checkInputEmail()"
+                        placeholder="Your email" required name="email" #emailField>
+                    <img class="attention d-none" id="email-attention" required title="The input must contain a @-sign"
+                        src="./assets/img/attention.png" alt="attention">
                 </div>
                 <span class="email-required transperent" id="email-required">Your email is required</span>
                 <div class="input-container">
-                    <textarea (focus)="setMessageAttention()" (input)="checkInputMessage()" name="" id="" cols="30" rows="10" placeholder="Your message"
-                        required name="message" #messageField></textarea>
-                    <img class="attention d-none" id="message-attention" src="./assets/img/attention.png" alt="attention">
+                    <textarea (focus)="setMessageAttention()" (input)="checkInputMessage()" name="" id="" cols="30"
+                        rows="10" placeholder="Your message" required name="message" #messageField></textarea>
+                    <img class="attention d-none" id="message-attention" src="./assets/img/attention.png"
+                        alt="attention">
                 </div>
                 <span class="message-required transperent" id="message-required">Your message is empty</span>
                 <button #sendButton>Send a message :)</button>
@@ -44,13 +49,13 @@
     </div>
 </div>
 <div class="bottom-div">
-        <div>
-            <img (mouseover)="showGreen()" (mouseleave)="removeGreen()" (click)="scrollToTop()" class="go-up-button" src="./assets/img/go-up-button.png" alt="go up button">
-            <img (click)="scrollToTop()" class="go-up-button-green d-none" id="mouseTarget" src="./assets/img/go-up-button-green.svg"
-                alt="go up button">
-        </div>
+    <div>
+        <img (mouseover)="showGreen()" (mouseleave)="removeGreen()" (click)="scrollToTop()" class="go-up-button"
+            src="./assets/img/go-up-button.png" alt="go up button">
+        <img (click)="scrollToTop()" class="go-up-button-green d-none" id="mouseTarget"
+            src="./assets/img/go-up-button-green.svg" alt="go up button">
+    </div>
     <div class="shadow-div">
         <img class="purple-shadow4" src="./assets/img/purple-shadow4.png" alt="shadow">
     </div>
 </div>
-

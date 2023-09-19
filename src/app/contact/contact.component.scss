@@ -2,37 +2,6 @@
     display: flex;
     margin-top: 170px;
 
-    // input{
-    //     background: rgb(20, 29, 47);
-    //     border: 1px solid rgb(151, 71, 255);
-    //     border-radius: 5px;
-    //     padding: 12px;
-    //     margin-bottom: 16px;
-    //     width: 400px;
-    //     &::placeholder{
-    //         color: white;
-    //     }
-    //     &:hover{
-    //         border: 1px solid rgb(112, 230, 28);
-    //         cursor: pointer;
-    //     }
-    // }
-
-    // textarea{
-    //     background: rgb(20, 29, 47);
-    //     border: 1px solid rgb(151, 71, 255);
-    //     border-radius: 5px;
-    //     padding: 12px;
-    //     width: 400px;
-    //     color: white;
-    //     &::placeholder{
-    //         color: white;
-    //     }
-    //     &:hover{
-    //         border: 1px solid rgb(112, 230, 28);
-    //         cursor: pointer;
-    //     }
-    // }
 
     .green {
         outline: 1px solid rgb(112, 230, 28) !important;
@@ -59,27 +28,13 @@
         &::placeholder {
           color: white;
         }
-    
-        // &:focus {
-        //   outline:  1px solid rgb(230, 28, 64);
-        //   &:hover{
-        //     border: none !important;
-        //   }
-        // }
-    
-        // &:green {
-        //   outline: 1px solid rgb(112, 230, 28) !important;
-        //   border: none !important;
-        // }
       }
     
-      // Style für leere Inputfelder und Textareas
       input.empty, textarea.empty {
         border-color: rgb(151, 71, 255);
         background: rgb(20, 29, 47);
       }
     
-      // Ändere den Style beim Hover für die Inputfelder und Textareas
       input:hover, textarea:hover {
         border-color: rgb(112, 230, 28);
         cursor: pointer;
@@ -109,7 +64,9 @@
     align-items: center;
 }
 
+
 .line{
+    margin-top: 42px;
     height: 2px;
     width: 5%;
     background: rgb(151, 71, 255);

@@ -1,45 +1,12 @@
 <div id="portfolio"></div>
-<div class="portfolio-head">
+<div class="portfolio-head" data-aos="fade-up">
     <div class="line-left"></div>
     <h1>Portfolio</h1>
     <div class="line-right"></div>
 </div>
 <div class="sample">
-    <span>This page is a sample of my work - please feel free to try them out.</span>
+    <span>This page, built with Angular, is a sample of my work - please feel free to try them out.</span>
 </div>
-<!-- <div class="project-frame">
-    <div class="image-container">
-        <img class="project-image" src="/assets/img/join.png" alt="laptop showing join project">
-    </div>
-    <div class="project-container">
-        <h3>Join</h3>
-        <h4>JavaScript | HTML | CSS</h4>
-        <span>Task manager inspired by Kanban System, create and organize tasks using drag and drop functions, assign
-            users and categories.</span>
-            <div class="button-container">
-                <a href="https://steffen-schanze.developerakademie.net/KANBAN-Board" target="_blank">
-                    <button class="live-test">Live test</button>
-                </a><a href="https://github.com/steffenjoachim/KANBAN-Board" target="_blank">
-                    <button class="github">Github</button></a>
-            </div>
-    </div>
-</div>   -->
-<!-- <div class="project-frame El-Pollo-loco">
-    <div class="project-container">
-        <h3>El Pollo Loco</h3>
-        <h4>JavaScript | HTML | CSS</h4>
-        <span>Jump an run game</span>
-        <div class="button-container">
-            <a href="https://steffen-schanze.developerakademie.net/El-Pollo-loco" target="_blank">
-                <button class="live-test">Live test</button>
-            </a><a href="https://github.com/steffenjoachim/El-Pollo-loco" target="_blank">
-                <button class="github">Github</button></a>
-        </div>
-    </div>
-    <div class="image-container el-pollo-loco">
-        <img class="project-image" src="/assets/img/El_Pollo_Loco.png" alt="laptop showing El-Pollo-loco game">
-    </div>
-</div>  -->
 <div>
     <app-project *ngFor="let project of projects" [project]="project"></app-project>
 </div>
