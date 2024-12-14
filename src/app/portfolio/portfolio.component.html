@@ -8,6 +8,15 @@
     <span>This page, built with Angular, is a sample of my work - please feel free to try them out.</span>
 </div>
 <div>
+   <h2 class="current-project">My current project:</h2>
+</div>
+<div>
+    <app-project *ngFor="let project of currentProject" [project]="project"></app-project>
+</div>
+<div>
+    <h2 class="best-projects">My best projects so far:</h2>
+ </div>
+<div>
     <app-project *ngFor="let project of projects" [project]="project"></app-project>
 </div>
 <div id="contact"></div>

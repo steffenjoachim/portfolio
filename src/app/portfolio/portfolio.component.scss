@@ -116,6 +116,12 @@ h1{
     z-index: -1;
 }
 
+.current-project, .best-projects{
+    text-align: center;
+    margin-top: 32px;
+    font-size: 40px;
+}
+
 @media (max-width: 1070px) {
 
     .project-container{
