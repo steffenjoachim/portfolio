@@ -51,15 +51,5 @@ export class PortfolioComponent {
       imgUrl: '/assets/img/El_Pollo_Loco.png',
       order: 'odd',
     },
-    {
-      name: 'My simple CRM',
-      skills: 'Angular | TypeScript | Firebase',
-      description:
-        'Very simple CRM app to demonstrate the four basic CRUD functions based on an Angular/Firebase project.',
-      serverUrl: 'https://steffen-schanze.de/my-simple-crm',
-      gitUrl: 'https://github.com/steffenjoachim/my-simple-crm',
-      imgUrl: '/assets/img/my-simple-crm.png',
-      order: 'even',
-    },
   ];
 }
